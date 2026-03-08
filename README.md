@@ -28,13 +28,21 @@ Shipping canceled: 4.3%
 
 ## 🗂️ Project Structure
 ├── Datasets/
+
 │   └── DataCoSupplyChainDataset.csv
+
 ├── Models/
+
 │   ├── XGBoost.joblib
+
 │   ├── encoder.joblib
+
 │   └── feature_columns.joblib
+
 ├── SupplyChain.ipynb          # Full pipeline notebook
+
 ├── app.py                     # Streamlit prediction app
+
 └── README.md
 
 ## 🔧 Pipeline Overview
