@@ -6,7 +6,7 @@ from datetime import datetime
 
 # ── Page config ────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Supply Chain Risk Predictor",
+    page_title="Supply Chain Latency & Risk Prediction",
     page_icon="📦",
     layout="centered"
 )
@@ -45,7 +45,7 @@ SHIPPING_MODES = ['Standard Class', 'First Class', 'Second Class', 'Same Day']
 DAY_ORDER      = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
 # ── UI ─────────────────────────────────────────────────────────
-st.title("📦 Supply Chain Risk Predictor")
+st.title("📦 Supply Chain Latency & Risk Prediction")
 st.markdown("Predict shipment delivery outcome based on order details.")
 st.divider()
 
@@ -184,4 +184,5 @@ if st.button("🔮 Predict Delivery Outcome", use_container_width=True, type="pr
     # Detailed probabilities
     st.markdown("**Confidence scores:**")
     for i, (lbl, _) in LABELS.items():
+
         st.progress(float(proba[i]), text=f"{lbl}: {proba[i]*100:.1f}%")
