@@ -100,24 +100,24 @@ LightGBM — Accuracy: 0.72 | Macro F1: 0.60 | Weighted F1: 0.70
 
 XGBoost ✅ — Accuracy: 0.75 | Macro F1: 0.65 | Weighted F1: 0.74
 
-n_estimators     = 500      learning_rate    = 0.15
-max_depth        = 13       min_child_weight = 3
-subsample        = 0.7      colsample_bytree = 0.8
-gamma            = 0.1      reg_alpha        = 0
-reg_lambda       = 1.5
+    n_estimators     = 500      learning_rate    = 0.15
+    max_depth        = 13       min_child_weight = 3
+    subsample        = 0.7      colsample_bytree = 0.8
+    gamma            = 0.1      reg_alpha        = 0
+    reg_lambda       = 1.5
 
 Final Test Results
 
                    precision    recall  f1-score   support
 
-    Advance shipping       0.64      0.73      0.68      8,294
-    Shipping on time       0.79      0.42      0.55      6,420
-    Late delivery       0.80      0.90      0.85     19,746
+     Advance shipping       0.64      0.73      0.68      8,294
+     Shipping on time       0.79      0.42      0.55      6,420
+        Late delivery       0.80      0.90      0.85     19,746
     Shipping canceled       0.76      0.39      0.51      1,547
 
-         accuracy                           0.75     36,007
-        macro avg       0.75      0.61      0.65     36,007
-     weighted avg       0.76      0.75      0.74     36,007
+             accuracy                           0.75     36,007
+            macro avg       0.75      0.61      0.65     36,007
+         weighted avg       0.76      0.75      0.74     36,007
 
 Note: Supply chain delay prediction is inherently difficult due to external factors not captured in the data (weather, port congestion, carrier issues). Industry benchmarks report 70–80% accuracy on similar datasets. This model matches or exceeds human-level logistics prediction performance (~70–75%).
 
