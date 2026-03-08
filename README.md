@@ -3,7 +3,16 @@ A full end-to-end machine learning project that predicts shipment delivery outco
 
 ## 🎯 Problem Statement
 Given an order's details (payment type, shipping mode, market, customer info, financials, and shipping date), predict one of four delivery outcomes:
-ClassLabel0🟢 Advance Shipping1🔵 Shipping On Time2🔴 Late Delivery3⚠️ Shipping Canceled
+
+ClassLabel0
+
+🟢 Advance Shipping1
+
+🔵 Shipping On Time2
+
+🔴 Late Delivery3
+
+⚠️ Shipping Canceled
 
 ## 📊 Dataset
 
